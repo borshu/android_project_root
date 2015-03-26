@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/holo_blue_dark"
+        android:gravity="center"
+        android:text="@string/dialog_title"
+        android:textColor="@android:color/white" />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/holo_blue_dark"
+        android:gravity="center"
+        android:text="@string/dialog_message"
+        android:textColor="@android:color/white" />
+
+    <LinearLayout
+        android:gravity="center"
+        style="ndroid:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/holo_blue_dark"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnVisit"
+            style="android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_dark"
+            android:onClick="onclick"
+            android:text="@string/dialog_visit"
+            android:textColor="@android:color/white" >
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnNotNow"
+            style="android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_dark"
+            android:onClick="onclick"
+            android:text="@string/dialog_not_now"
+            android:textColor="@android:color/white" >
+
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>
